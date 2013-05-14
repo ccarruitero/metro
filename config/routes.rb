@@ -1,6 +1,7 @@
 Metro::Application.routes.draw do
-  resources :schedules
-  resources :stations
+  resources :stations do
+    resources :schedules
+  end
 
   root to: 'stations#index'
 end

@@ -5,8 +5,8 @@ class CreateStations < ActiveRecord::Migration
       t.string :name
       t.string :district
       t.string :address
-      t.integer :lat
-      t.integer :lng
+      t.decimal :lat
+      t.decimal :lng
 
       t.timestamps
     end

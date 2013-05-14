@@ -5,4 +5,7 @@ class StationsController < ApplicationController
     respond_with Station.all
   end
 
+  def show
+    respond_with Station.find(params[:id])
+  end
 end
