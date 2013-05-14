@@ -1,6 +1,6 @@
 class CreateStations < ActiveRecord::Migration
   def change
-    create_table :stations do |t|
+    create_table :stations, :id => false do |t|
       t.string :code
       t.string :name
       t.string :district
